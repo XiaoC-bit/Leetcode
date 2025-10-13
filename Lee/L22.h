@@ -30,4 +30,13 @@ using namespace std;
 class L22 {
 public:
     vector<string> generateParenthesis(int n);
+
+private:
+    //动态规划解法
+    vector<string> dp(int n);
+    //栈回溯法
+    vector<string> stackbackTrace(int n);
+    //递归回溯法
+    void recursizebackTrace(vector<string>& ans, string& cur, int open, int close, int n);
+
 };

@@ -13,6 +13,9 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Memo">
+      <UniqueIdentifier>{e94cbbbc-50ae-4350-825f-31be8175bf7b}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -25,6 +28,12 @@
   <ItemGroup>
     <ClInclude Include="L22.h">
       <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="dp_memo.h">
+      <Filter>Memo</Filter>
+    </ClInclude>
+    <ClInclude Include="all.h">
+      <Filter>Memo</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
