@@ -24,6 +24,12 @@
     <ClCompile Include="L22.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="L23.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="L4.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="L22.h">
@@ -33,6 +39,15 @@
       <Filter>Memo</Filter>
     </ClInclude>
     <ClInclude Include="all.h">
+      <Filter>Memo</Filter>
+    </ClInclude>
+    <ClInclude Include="L23.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="L4.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="common.h">
       <Filter>Memo</Filter>
     </ClInclude>
   </ItemGroup>
