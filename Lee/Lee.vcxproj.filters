@@ -30,6 +30,9 @@
     <ClCompile Include="L4.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="LCR170.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="L22.h">
@@ -49,6 +52,9 @@
     </ClInclude>
     <ClInclude Include="common.h">
       <Filter>Memo</Filter>
+    </ClInclude>
+    <ClInclude Include="LCR170.h">
+      <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

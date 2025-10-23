@@ -3,11 +3,13 @@
 #include "L22.h"
 
 #include "L4.h"
-
+#include "LCR170.h"
 
 int main() {
-
-	L4 solution4;
+	std::vector<int> nums1 = { 9, 7, 5, 4, 6};
+	LCR170 lcr170;
+	lcr170.reversePairs(nums1);
+	/*L4 solution4;
 	std::vector<int> nums1 = { 1,1 };
 	std::vector<int> nums2 = { 1 };
 	auto res = solution4.findMedianSortedArrays(nums1, nums2);
@@ -21,7 +23,7 @@ int main() {
 		}
 		std::cout << "----------------" << std::endl;
 
-	}
+	}*/
 	
 
 	return 0;
