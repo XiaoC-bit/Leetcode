@@ -129,6 +129,7 @@
   <ItemGroup>
     <ClCompile Include="L22.cpp" />
     <ClCompile Include="L23.cpp" />
+    <ClCompile Include="L34.cpp" />
     <ClCompile Include="L4.cpp" />
     <ClCompile Include="LCR170.cpp" />
     <ClCompile Include="main.cpp" />
@@ -139,6 +140,7 @@
     <ClInclude Include="L22.h" />
     <ClInclude Include="dp_memo.h" />
     <ClInclude Include="L23.h" />
+    <ClInclude Include="L34.h" />
     <ClInclude Include="L4.h" />
     <ClInclude Include="LCR170.h" />
   </ItemGroup>
