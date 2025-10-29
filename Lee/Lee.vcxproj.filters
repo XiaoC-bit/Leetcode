@@ -36,6 +36,12 @@
     <ClCompile Include="L34.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="L327.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="L406.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="L22.h">
@@ -60,6 +66,12 @@
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="L34.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="L327.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="L406.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>

@@ -1,23 +1,34 @@
 #include <iostream>
 
 #include "L22.h"
-
+#include "L327.h"
 #include "L4.h"
 #include "LCR170.h"
 #include "L34.h"
+#include "L406.h"
 
 int main() {
 
+	L406 l406;
+	// [[7,0],[4,4],[7,1],[5,0],[6,1],[5,2]]
+	std::vector<std::vector<int>> data = { {7,0},{4,4},{7,1},{5,0},{6,1},{5,2} };
+	l406.reconstructQueue(data);
+	std::vector<int> nums1 = { -2,5,-1 };
+
+	L327 l327;
+	l327.countRangeSum(nums1, -2, 2);
+
+	LCR170 lcr170;
+	lcr170.reversePairs(nums1);
+
+	/*
 	L34 l34;
 	std::vector<int> nums1 = { 5, 7, 7, 8, 8, 10 };
 	auto ans = l34.searchRange(nums1, 8);
 
 	std::cout << ans[0] << "," << ans[1];
 
-	/*
-	std::vector<int> nums1 = {1,2,3,4};
-	LCR170 lcr170;
-	lcr170.reversePairs(nums1);
+	
 	L4 solution4;
 	std::vector<int> nums1 = { 1,1 };
 	std::vector<int> nums2 = { 1 };

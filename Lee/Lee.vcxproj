@@ -129,8 +129,10 @@
   <ItemGroup>
     <ClCompile Include="L22.cpp" />
     <ClCompile Include="L23.cpp" />
+    <ClCompile Include="L327.cpp" />
     <ClCompile Include="L34.cpp" />
     <ClCompile Include="L4.cpp" />
+    <ClCompile Include="L406.cpp" />
     <ClCompile Include="LCR170.cpp" />
     <ClCompile Include="main.cpp" />
   </ItemGroup>
@@ -140,8 +142,10 @@
     <ClInclude Include="L22.h" />
     <ClInclude Include="dp_memo.h" />
     <ClInclude Include="L23.h" />
+    <ClInclude Include="L327.h" />
     <ClInclude Include="L34.h" />
     <ClInclude Include="L4.h" />
+    <ClInclude Include="L406.h" />
     <ClInclude Include="LCR170.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

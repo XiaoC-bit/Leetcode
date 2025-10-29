@@ -6,12 +6,12 @@ class L34
 {
 public:
     int lower_bound(vector<int>& nums, int target) {
-        int l = 0,r=nums.size()-1;
+        size_t l = 0,r=nums.size()-1;
 
-        int ans = -1;
+        size_t ans = -1;
 
         while (l <= r) {
-            int mid = l + (r - l) / 2;
+            size_t mid = l + (r - l) / 2;
             if (nums.at(mid) == target) {
                 ans = mid;
             }
@@ -23,17 +23,17 @@ public:
             }
         }
 
-        return ans;
+        return static_cast<int>(ans);
     }
 
 
     int upper_bound(vector<int>& nums, int target) {
-        int l = 0, r = nums.size() - 1;
+        size_t l = 0, r = nums.size() - 1;
 
-        int ans = -1;
+        size_t ans = -1;
 
         while (l <= r) {
-            int mid = l + (r - l) / 2;
+            size_t mid = l + (r - l) / 2;
             if (nums.at(mid) == target) {
                 ans = mid;
             }
@@ -45,7 +45,7 @@ public:
             }
         }
 
-        return ans;
+        return static_cast<int>(ans);
     }
 
     vector<int> searchRange(vector<int>& nums, int target) {
