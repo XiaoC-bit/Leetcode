@@ -39,7 +39,7 @@ class L327
 public:
     int countRangeSum(vector<int>& nums, int lower, int upper) {
         long long sum = 0;
-        vector<long long> preSum = {};
+        vector<long long> preSum = {0};
         for (int v : nums) {
             sum += v;
             preSum.push_back(sum);

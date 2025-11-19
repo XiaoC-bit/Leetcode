@@ -7,23 +7,31 @@
 #include "L34.h"
 #include "L406.h"
 #include "L42.h"
-
+#include "L496.h"
 int main() {
-	L42 l42;
-	vector<int> height = { 0, 1, 0, 2, 1, 0, 1, 3, 2, 1, 2, 1 };
-	l42.trap(height);
 
-	L406 l406;
-	// [[7,0],[4,4],[7,1],[5,0],[6,1],[5,2]]
-	std::vector<std::vector<int>> data = { {7,0},{4,4},{7,1},{5,0},{6,1},{5,2} };
-	l406.reconstructQueue(data);
 	std::vector<int> nums1 = { -2,5,-1 };
 
 	L327 l327;
 	l327.countRangeSum(nums1, -2, 2);
 
-	LCR170 lcr170;
-	lcr170.reversePairs(nums1);
+	L496 l496;/*
+	vector<int> nums1 = { 1,3,5,2,4 };
+	vector<int>nums2 = { 6,5,4,3,2,1,7 };
+	l496.nextGreaterElement(nums1, nums2);*/
+
+	//L42 l42;
+	//vector<int> height = { 0, 1, 0, 2, 1, 0, 1, 3, 2, 1, 2, 1 };
+	//l42.trap(height);
+
+	//L406 l406;
+	//// [[7,0],[4,4],[7,1],[5,0],[6,1],[5,2]]
+	//std::vector<std::vector<int>> data = { {7,0},{4,4},{7,1},{5,0},{6,1},{5,2} };
+	//l406.reconstructQueue(data);
+	
+
+	//LCR170 lcr170;
+	//lcr170.reversePairs(nums1);
 
 	/*
 	L34 l34;

@@ -134,6 +134,7 @@
     <ClCompile Include="L4.cpp" />
     <ClCompile Include="L406.cpp" />
     <ClCompile Include="L42.cpp" />
+    <ClCompile Include="L496.cpp" />
     <ClCompile Include="LCR170.cpp" />
     <ClCompile Include="main.cpp" />
   </ItemGroup>
@@ -148,6 +149,7 @@
     <ClInclude Include="L4.h" />
     <ClInclude Include="L406.h" />
     <ClInclude Include="L42.h" />
+    <ClInclude Include="L496.h" />
     <ClInclude Include="LCR170.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
