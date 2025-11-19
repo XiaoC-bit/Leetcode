@@ -42,6 +42,9 @@
     <ClCompile Include="L406.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="L42.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="L22.h">
@@ -72,6 +75,9 @@
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="L406.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="L42.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>

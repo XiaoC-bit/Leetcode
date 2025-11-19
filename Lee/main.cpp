@@ -6,8 +6,12 @@
 #include "LCR170.h"
 #include "L34.h"
 #include "L406.h"
+#include "L42.h"
 
 int main() {
+	L42 l42;
+	vector<int> height = { 0, 1, 0, 2, 1, 0, 1, 3, 2, 1, 2, 1 };
+	l42.trap(height);
 
 	L406 l406;
 	// [[7,0],[4,4],[7,1],[5,0],[6,1],[5,2]]
