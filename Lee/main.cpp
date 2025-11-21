@@ -10,7 +10,13 @@
 #include "L496.h"
 #include "L218.h"
 #include "L307.h"
+#include "L493.h"
 int main() {
+	vector<int> x = { 1,3,2,3,1 };
+	L493 l493;
+	l493.reversePairs(x);
+
+	/*
 	vector<int> x = { 1,3,5 };
 	NumArray arr(x);
 	arr.sumRange(0, 2);
@@ -22,7 +28,7 @@ int main() {
 	buildings.push_back({ 3, 7, 15 });
 	buildings.push_back({ 5, 12, 12 });
 	buildings.push_back({ 15, 20, 10 });
-	buildings.push_back({ 19, 24, 8 });
+	buildings.push_back({ 19, 24, 8 });*/
 
 
 	//buildings.push_back({ 0, 2, 3 });
@@ -37,8 +43,8 @@ int main() {
 	buildings.push_back({ 20, 25, 5 });*/
 
 
-	L218 l218;
-	l218.getSkyline(buildings);
+	L218 l218;/*
+	l218.getSkyline(buildings);*/
 
 	/*std::vector<int> nums1 = {-2,5,-1};
 

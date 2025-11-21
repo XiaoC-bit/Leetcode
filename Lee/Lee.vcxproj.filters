@@ -54,6 +54,9 @@
     <ClCompile Include="L307.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="L493.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="L22.h">
@@ -96,6 +99,9 @@
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="L307.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="L493.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>
