@@ -9,7 +9,13 @@
 #include "L42.h"
 #include "L496.h"
 #include "L218.h"
+#include "L307.h"
 int main() {
+	vector<int> x = { 1,3,5 };
+	NumArray arr(x);
+	arr.sumRange(0, 2);
+	arr.update(1, 2);
+	arr.sumRange(0, 2);
 	vector<vector<int>> buildings;
 	
 	buildings.push_back({ 2, 9, 10 });

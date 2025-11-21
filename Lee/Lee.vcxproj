@@ -130,6 +130,7 @@
     <ClCompile Include="L22.cpp" />
     <ClCompile Include="L23.cpp" />
     <ClCompile Include="L218.cpp" />
+    <ClCompile Include="L307.cpp" />
     <ClCompile Include="L327.cpp" />
     <ClCompile Include="L34.cpp" />
     <ClCompile Include="L4.cpp" />
@@ -146,6 +147,7 @@
     <ClInclude Include="dp_memo.h" />
     <ClInclude Include="L23.h" />
     <ClInclude Include="L218.h" />
+    <ClInclude Include="L307.h" />
     <ClInclude Include="L327.h" />
     <ClInclude Include="L34.h" />
     <ClInclude Include="L4.h" />
