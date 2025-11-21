@@ -8,14 +8,38 @@
 #include "L406.h"
 #include "L42.h"
 #include "L496.h"
+#include "L218.h"
 int main() {
+	vector<vector<int>> buildings;
+	
+	buildings.push_back({ 2, 9, 10 });
+	buildings.push_back({ 3, 7, 15 });
+	buildings.push_back({ 5, 12, 12 });
+	buildings.push_back({ 15, 20, 10 });
+	buildings.push_back({ 19, 24, 8 });
 
-	std::vector<int> nums1 = { -2,5,-1 };
+
+	//buildings.push_back({ 0, 2, 3 });
+	//buildings.push_back({ 2, 5, 3 });
+
+	//buildings.push_back({ 1, 2, 1 });
+	//buildings.push_back({ 1, 2, 2 });
+	//buildings.push_back({ 1, 2, 3 });
+
+	/*buildings.push_back({ 5, 15, 20 });
+	buildings.push_back({ 10, 15, 20 });
+	buildings.push_back({ 20, 25, 5 });*/
+
+
+	L218 l218;
+	l218.getSkyline(buildings);
+
+	/*std::vector<int> nums1 = {-2,5,-1};
 
 	L327 l327;
 	l327.countRangeSum(nums1, -2, 2);
 
-	L496 l496;/*
+	L496 l496;
 	vector<int> nums1 = { 1,3,5,2,4 };
 	vector<int>nums2 = { 6,5,4,3,2,1,7 };
 	l496.nextGreaterElement(nums1, nums2);*/

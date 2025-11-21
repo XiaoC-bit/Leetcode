@@ -5,76 +5,86 @@
 class  BIT
 {
 private:
-    vector<int64_t>trees;
-    size_t n_;
-public:
-    BIT(size_t n) :n_(n), trees(n + 1, 0) {
-    };
-    ~BIT() {
-    };
+    vector<int> data;
+    size_t n;
 
-    static int lowBit(int x) {
+public:
+    BIT(size_t num) :n(num), data(num + 1, 0) {
+
+    }
+    ~BIT() {
+
+    }
+
+    static int lowbit(int x) {
         return x & (-x);
     }
 
-    void update(int x, int64_t delta) {
-        while (x <= n_) {
-            trees[x] += delta;
-            x += lowBit(x);
+    int query(int x) {
+        int res = 0;
+
+        while (x) {
+            res += data[x];
+            x -= lowbit(x);
+        }
+
+
+        return res;
+    }
+
+    void update(int x, int delta) {
+        while (x <= n) {
+            data[x] += delta;
+            x += lowbit(x);
         }
     }
 
-    int64_t query(int x) {
-        int64_t count = 0;
-        while (x > 0) {
-            count += trees[x];
-            x -= lowBit(x);
-        }
-        return count;
-    }
+
 };
 
 class L327
 {
 public:
     int countRangeSum(vector<int>& nums, int lower, int upper) {
+
+        //先求前缀和
+        vector<long long> preSum(nums.size() + 1, 0);
         long long sum = 0;
-        vector<long long> preSum = {0};
-        for (int v : nums) {
-            sum += v;
-            preSum.push_back(sum);
+        for (size_t i = 0; i < nums.size(); i++) {
+            sum += nums.at(i);
+            preSum[i + 1] = sum;
         }
 
-        /**
-         * 必须把
-            allNumbers.insert(x - lower);
-            allNumbers.insert(x - upper);
-            也进行离散化处理，这样x - lower和x - upper才能在离散数组中占据位置，才能进行统计。
-            即使它不在preSum。只是为了统计
-         */
-        set<long long> allNumbers;
-        for (long long x : preSum) {
-            allNumbers.insert(x);
-            allNumbers.insert(x - lower);
-            allNumbers.insert(x - upper);
-        }
-        // 利用哈希表进行离散化
-        unordered_map<long long, int> values;
-        int idx = 0;
-        for (long long x : allNumbers) {
-            values[x] = idx;
-            idx++;
+        set<long long> values;
+        for (auto& sum : preSum) {
+            values.insert(sum);
+            values.insert(sum - lower);
+            values.insert(sum - upper);
         }
 
-        int ret = 0;
-        BIT bit(values.size());
-        for (int i = 0; i < preSum.size(); i++) {
-            int left = values[preSum[i] - upper], right = values[preSum[i] - lower];
-            ret += bit.query(right + 1) - bit.query(left);
-            //只更新preSum的元素。
-            bit.update(values[preSum[i]] + 1, 1);
+
+        int idx = 1;
+        unordered_map<long long,int> formatMap;
+        for (auto& value : values) {
+            formatMap[value] = idx++;
         }
-        return ret;
+
+        BIT bit(formatMap.size());
+        int res = 0;
+
+        for (size_t i = 0; i <= nums.size(); i++) {
+            long long x = preSum[i];
+                long long L = x - upper;
+            long long R = x - lower;
+
+            res += bit.query( formatMap[R]) - bit.query(formatMap[L]-1);
+            bit.update(formatMap[x], 1);
+
+
+        }
+
+
+        return res;
     }
 };
 

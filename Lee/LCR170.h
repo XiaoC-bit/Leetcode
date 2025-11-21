@@ -57,7 +57,7 @@ public:
 
         BITA bit(record.size() + 1);
 
-        for (int i = record.size() - 1; i >= 0; i--) {
+        for (size_t i = record.size() - 1; i >= 0; i--) {
             ans += bit.query(record.at(i) - 1);
             bit.update(record.at(i),1);
         }
